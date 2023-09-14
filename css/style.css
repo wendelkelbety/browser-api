@@ -20,29 +20,38 @@ body {
 }
 
 header {
+    display: flex;
     height: 148px;
 }
 
 .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
-    float: left;
     height: 100%;
-    padding-left: 205px;
+    width: 20%;
+    float: left;
+}
+
+.logo img{
+    height: 30%;
+    width: 60%;
 }
 
 .menu{
-    height: 100%;
-    width: 693px;
-    margin-left: 1075px;
+    width: 80%;
 }
 
 .menu ul{
-    padding-top: 68px;
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    width: 60%;
+    float: right;
+    padding: 0 12vw 0 10px;
 }
 
 .menu ul li {
@@ -62,7 +71,6 @@ header {
 }
 
 #transf-digital {
-    margin: 90px auto 8rem;
     height: 700px;
 }
 
@@ -72,28 +80,29 @@ header {
 }
 
 .div-img-transf-digital {
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
-    width: 1050px;
-    height: 700px;
+    width: 60%;
+    height: 100%;
     float: left;
 }
 
 .div-img-transf-digital img {
-    width: 800px;
-    margin-left: 178px;
+    width: 80%;
+    height: auto;
+    margin-left: 10vw;
 }
 
 .div-text-transf-digital{
-    height: 700px;
-    width: 720px;
+    height: 100%;
+    width: 40%;
     float: left;
-    padding: 100px 0 0 42px;
+    padding: 100px 0 0 0;
 }
 
 .div-text-transf-digital h2 {
-    font-size: 64px;
+    font-size: 58px;
     font-weight: 700;
     line-height: 78px;
     letter-spacing: 0em;
@@ -101,7 +110,7 @@ header {
 }
 
 .div-text-transf-digital p {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 44px;
     letter-spacing: 0em;
@@ -154,20 +163,33 @@ header {
 }
 
 .circulo-localizacao {
-    position: absolute;
+    position: relative;
     height: 675px;
-    width: 800px;
+    width: 100%;
     z-index: -1;
-    top: 1165px;
+    top: -250px;
     opacity: 20%;
+    float: left;
+}
+
+.circle-1{
+    cx: calc(100vw/12);
 }
 
 .mapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 494px;
+    float: left;
+    margin: 60px 0 20px 0;
+}
+
+.mapa iframe{
     background-color: #E2E0E0;
     box-shadow: 0 0 18px 16px rgba(226, 224, 224, .4);
-    width: 975px;
-    height: 494px;
-    margin: 80px 0 0 450px;
 }
 
 .div-text-localizacao {
@@ -175,16 +197,18 @@ header {
 }
 
 .linha-localizacao {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    height: 170px;
+    width: 100%;
+    top: -50px;
 }
 
 #servicos {
-    margin: 180px auto 8rem;
-    height: 800px;
+    margin: 180px auto 0px;
+    height: auto;
 }
 
 #servicos h2 {
@@ -210,13 +234,16 @@ header {
 }
 
 .circulo-servicos {
-    position: absolute;
+    position: relative;
     height: 680px;
-    width: 540px;
+    width: 100%;
     z-index: -1;
-    top: 2190px;
-    left: 1360px;
+    top: -250px;
     opacity: 30%;
+}
+
+.circle-2{
+    cx: calc(92vw);
 }
 
 .container-cards-servicos {
@@ -225,14 +252,18 @@ header {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    height: 448px;
-    margin-top: 75px;
-
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: -600px;
 }
 
 .cards-servicos {
-    width: 1324px;
-    height: 448px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards-servicos div{
@@ -241,6 +272,7 @@ header {
     height: 448px;
     float: left;
     margin-left: 22px;
+    margin-top: 20px;
 }
 
 .cards-servicos div:hover{
@@ -278,8 +310,9 @@ header {
 }
 
 #segmentos {
-    margin: 135px auto 21rem;
-    height: 900px;
+    position: relative;
+    top: -300px;
+    height: 100%;
 }
 
 #segmentos h2 {
@@ -305,22 +338,23 @@ header {
 }
 
 .container-cards-segmentos {
-    height: 620px;
+    height: auto;
     margin-top: 75px;
 }
 
 .cards-segmentos {
     display: flex;
-    justify-content: center;
-    height: 280px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
     margin-bottom: 70px;
 }
 
 .cards {
-    height: 280px;
+    height: auto;
     width: 400px;
-    margin: 0 95px;
     float: left;
+    margin: 0px 40px;
 }
 
 .cards p {
@@ -362,7 +396,7 @@ footer {
 
 footer p {
     margin-top: 70px;
-    margin-right: 145px;
+    margin-right: 40px;
     float: right;
     color: #fff;
     font-size: 14px;
@@ -413,4 +447,283 @@ footer p {
     width: 100% !important;
     position: none !important;
     text-align: center !important;
+}
+
+@media only screen and (max-width: 425px) {
+    .menu{
+        width: 80%;
+    }
+    .logo img{
+        height: 10%;
+        width: 60%;
+    }
+    .menu ul{
+        width: 90%;
+        padding: 0 4vw 0 10px;
+    }
+    .menu ul li a{
+        font-size: 1.2rem;
+    }
+
+    #transf-digital {
+        height: auto;
+    }
+
+    .div-img-transf-digital{
+        float: none;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-img-transf-digital img {
+        margin-left: none;
+    }
+
+    .div-text-transf-digital{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+    .div-text-transf-digital h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .div-text-transf-digital p {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        padding: 20px 0 40px 0;
+    }
+    
+    .div-text-transf-digital a {
+        font-size: 14px;
+        padding: 16px 24px;
+    }
+
+    #localizacao h2 {
+        font-size: 24px;
+    }
+    
+    #localizacao p{
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .mapa{
+        height: 300px;
+    }
+
+    .mapa iframe{
+        width: 90%;
+        height: 300px;
+        background-color: #E2E0E0;
+        box-shadow: 0 0 18px 16px rgba(226, 224, 224, .4);
+    }
+
+    .linha-localizacao{
+        top: -250px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 426px){
+    .menu{
+        width: 80%;
+    }
+    .logo img{
+        height: 10%;
+        width: 60%;
+    }
+    .menu ul{
+        width: 80%;
+        padding: 0 4vw 0 10px;
+    }
+    .menu ul li a{
+        font-size: 1.2rem;
+    }
+
+    #transf-digital {
+        height: auto;
+    }
+
+    .div-img-transf-digital{
+        float: none;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-img-transf-digital img {
+        margin-left: none;
+    }
+
+    .div-text-transf-digital{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+    .div-text-transf-digital h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .div-text-transf-digital p {
+        font-size: 26px;
+        line-height: 26px;
+        text-align: center;
+        padding: 20px 0 40px 0;
+    }
+    
+    .div-text-transf-digital a {
+        font-size: 14px;
+        padding: 16px 24px;
+    }
+
+    #localizacao h2 {
+        font-size: 32px;
+    }
+    
+    #localizacao p{
+        line-height: 26px;
+        font-size: 26px;
+    }
+
+    .mapa{
+        height: 300px;
+    }
+
+    .mapa iframe{
+        width: 90%;
+        height: 300px;
+        background-color: #E2E0E0;
+        box-shadow: 0 0 18px 16px rgba(226, 224, 224, .4);
+    }
+
+    .linha-localizacao{
+        top: -250px;
+    }
+} 
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+    .logo img{
+        height: 20%;
+        width: 60%;
+    }
+    .menu ul{
+        width: 75%;
+        padding: 0 6vw 0 10px;
+    }
+
+    #transf-digital {
+        height: auto;
+    }
+
+    .div-img-transf-digital{
+        float: none;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-img-transf-digital img {
+        margin-left: none;
+    }
+
+    .div-text-transf-digital{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+    .div-text-transf-digital h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .div-text-transf-digital p {
+        font-size: 28px;
+        text-align: center;
+        padding: 20px 0 40px 0;
+    }
+    
+    .div-text-transf-digital a {
+        font-size: 24px;
+        padding: 20px 36px;
+    }
+
+    #localizacao h2 {
+        font-size: 40px;
+    }
+    
+    #localizacao p{
+        font-size: 28px;
+    }
+
+    .mapa iframe{
+        width: 90%;
+        background-color: #E2E0E0;
+        box-shadow: 0 0 18px 16px rgba(226, 224, 224, .4);
+    }
+}
+ 
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .logo img{
+        height: 20%;
+        width: 60%;
+    }
+    .menu ul{
+        width: 70%;
+        padding: 0 8vw 0 10px;
+    }
+    #transf-digital {
+        height: 600px;
+    }
+
+    .div-img-transf-digital{
+        float: left;
+    }
+
+    .div-img-transf-digital img {
+        margin-left: 10vw;
+    }
+
+    .div-text-transf-digital{
+        float: left;
+        padding: 80px 0 0 0;
+    }
+    .div-text-transf-digital h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .div-text-transf-digital p {
+        font-size: 28px;
+        line-height: 30px;
+        padding: 40px 0 40px 0;
+    }
+    
+    .div-text-transf-digital a {
+        font-size: 16px;
+        padding: 22px 34px;
+    }
+
+    #localizacao h2 {
+        font-size: 40px;
+    }
+    
+    #localizacao p{
+        font-size: 28px;
+    }
+
+    .mapa iframe{
+        width: 90%;
+        background-color: #E2E0E0;
+        box-shadow: 0 0 18px 16px rgba(226, 224, 224, .4);
+    }
 }
